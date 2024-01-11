@@ -1,0 +1,13 @@
+footer {
+    background-color: #464E4E;
+    color: #f9f3e7;
+}
+
+.ftr-link a{
+    color: #f9f3e7;
+    text-decoration: none;
+}
+
+.ftr-link a:hover{
+    text-decoration: underline;
+}

@@ -4,152 +4,327 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Portfolio</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheets/stylesheet.css">
-    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/navbar.css">
+    <link rel="stylesheet" href="stylesheets/footer.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/other.css">
 </head>
 
 <body>
 
-    <!-- nav bar -->
-    <header class="header__container">
-        <nav>
-            <svg id="logo" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1028.38 1034.12">
-                <defs>
-                    <style>
-                        .cls-1 {
-                            stroke-width: 5.07px;
-                        }
-
-                        .cls-1,
-                        .cls-2,
-                        .cls-3 {
-                            stroke: #f8fbf2;
-                            stroke-miterlimit: 10;
-                        }
-
-                        .cls-1,
-                        .cls-3 {
-                            fill: #f8fbf2;
-                        }
-
-                        .cls-2 {
-                            fill: none;
-                            stroke-width: 30px;
-                        }
-
-                        .cls-3 {
-                            stroke-width: 1.01px;
-                        }
-                    </style>
-                </defs>
-                <rect class="cls-2" x="15.13" y="21.19" width="998.12" height="997.8" />
-                <g id="Y">
-                    <line class="cls-1" x1="609.77" y1="42.64" x2="155.54" y2="997.52" />
-                    <line class="cls-1" x1="155.3" y1="42.76" x2="383.21" y2="518.51" />
-                    <polygon class="cls-3"
-                        points="363.26 538.94 372.78 517.97 147.69 45.21 128.63 45.21 363.26 538.94" />
-                    <polygon class="cls-3"
-                        points="616.8 41.86 636.43 83.42 201.67 1000.36 163.43 1000.37 616.8 41.86" />
-                </g>
-                <g id="X">
-                    <line class="cls-1" x1="883.69" y1="43.07" x2="429.27" y2="998.36" />
-                    <line class="cls-1" x1="884.84" y1="998.24" x2="430.13" y2="43.59" />
-                    <polygon class="cls-3"
-                        points="690.76 511.71 667.48 516.9 892.33 44.02 911.39 44.02 690.76 511.71" />
-                    <polygon class="cls-3"
-                        points="690.77 527.79 667.48 522.62 892.57 995.38 911.63 995.37 690.77 527.79" />
-                </g>
-            </svg>
-
-            <ul class="header__menu">
-                <li><a class="header__link" href="index.html">Home</a></li>
-                <li><a class="header__link" href="#about">About Me</a></li>
-                <li><a class="header__link" href="portfolio.html">Portfolio</a></li>
-                <li><a class="header__link" href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-dark navbar-expand-lg bcg">
+        <div class="container-fluid">
+            <img src="images/logo.svg" class="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-light navbar-toggler-icon col"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text">
+                    <li class="nav-item px-3">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="aboutMe.html">About Me</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="contactMe.html" tabindex="-1" aria-disabled="true">Contact
+                            Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 
-    <div class="content">
-        <div style="width: 90%;">
-            <h1 class="title" id="portfolio">
-                PORTFOLIO
-            </h1>
-            <br>
-            <p>
-                Digital Design
-            </p>
-    
-            <div class="square-group">
-                <div class="square" id="square-1">
-                    <img src="images/poster.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    <!-- portfolio works -->
+    <main>
+        <div class="container-fluid">
+            <div class="container">
+                <h1 class="title" id="portfolio">
+                    PORTFOLIO
+                </h1>
+                <p class="portfolioPara">Please click on each box to view a larger version of my works and my thoughts
+                    about them.</p>
+                <br>
+
+                <!-- digital design -->
+                <p>
+                    Digital Design
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="square" id="square-1">
+                        <img src="images/poster.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    </div>
+
+                    <div class="square" id="square-2">
+                        <img src="images/namecard_front.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                    </div>
+
+                    <div class="square" id="square-3">
+                        <img src="images/covid19_poster.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                    </div>
                 </div>
 
-                <div class="square" id="square-2">
-                    <img src="images/namecard_front.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
-                </div>
-    
-                <div class="square" id="square-3">
-                    <img src="images/covid19_poster.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="square" id="square-1">
+                        <img src="images/magazine.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                    </div>
+
+                    <div class="square" id="square-2">
+                        <img src="images/green_tea_ad.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                    </div>
+
+                    <div class="square" id="square-3">
+                        <img src="images/c218-ga-cover.png" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                    </div>
                 </div>
 
- 
+
+                <!-- coding-programming works -->
+                <p>
+                    Coding/Programming related works
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="square" id="square-1">
+                        <img src="images/c346-L03-cover.png" onclick="openModal();currentSlide(7)" class="hover-shadow">
+                    </div>
+
+                    <div class="square" id="square-2">
+                        <img src="images/c346-L05-cover.png" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                    </div>
+
+                    <div class="square" id="square-3">
+                        <img src="images/c346-L10-cover.png" onclick="openModal();currentSlide(9)" class="hover-shadow">
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="square" id="square-1">
+                        <img src="images/c346-L12-cover.png" onclick="openModal();currentSlide(10)"
+                            class="hover-shadow">
+                    </div>
+                    <div class="square" id="square-2">
+                        <img src="images/c203-ga-home.png" onclick="openModal();currentSlide(11)" class="hover-shadow">
+                    </div>
+
+                    <div class="square" id="square-3">
+                        <img src="images/c219-L05-home.png" onclick="openModal();currentSlide(12)" class="hover-shadow">
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
             </div>
 
         </div>
-    
-    </div>
+    </main>
+
+
+    <!-- this shows the thumbnail of the items -->
+    <div class="row">
+
+        <!-- how lightbox thumbnail appears when clicked into -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="ctr">
+                        <img src="images/poster.png" width="50%">
+                    </div>
+                    <h1>Poster for da:ns Festival 2022</h1>
+                    <p>This poster was created for da:ns Festival 2023. <br><br>
+                
+                    For this poster, I aimed to target viewers who knew about contemporary dance, but were unfamiliar with it. I chose to use silhouettes for the dancers in order to keep the focus of the viewer on the shapes of the pose, rather than the identity of the dancers, so the viewer can tell that the event is about contemporary dance. It also made it easier for me to coordinate the colours as I did not have to worry about matching the various shades of colours on a real life image.<br><br>
+
+                    Contemporary dance is a genre of dance that combines other genres like ballet and jazz to express various emotions, and the poses chosen are common contemporary dance moves. In order to emphasise on that, I used lighter shades of blue, yellow and red, otherwise known as pink because they each represent freedom, joy and playfulness. In addition to this, they are a triad of matching colours on the colour wheel. It also complimented the indigo blue background, which was chosen to represent water and how that the dances in this event can be seen as a reflection of oneself. The shadows behind the dance poses are meant to make the colours pop more. <br><br>
+                    
+                    For visibility of details like the text, I chose to use white as it contrasted well with the indigo blue. I used ripples to show the movements of the dancers, and lines to give the poster some flow. For the yellow dancer, I used dots instead of ripples to show the build-up to her jump split, and gave all the dancers extra lines to show the flow of them moving into the pose seen in the poster. I used brushes with a paintbrush-like texture so that I could represent the dancers as paintbrushes painting a story through their dance. All of these combines to give the image of the dancers dancing on water, which amplifies the graceful and elegant image o f their dances. 
+                    </p>
+                </div>
+
+
+                <div class="mySlides">
+                    <img src="images/namecard_front.png">
+                    <h1>Namecard</h1>
+                    <p>This namecard was created as part of my Graded Assignment for one of my modules.<br><br>
+                        This design was created in order to present myself to potential clients or employers. For the front part
+                        of the name card, I included the Elements of Design shape, line, and colour, which is demonstrated in
+                        the irregular lines that make up the tree ring design. For the Principles of Design, I included contrast
+                        and emphasis, which is shown in the use of a triadic colour scheme between green, purple and
+                        orange. Emphasis can be seen in the way the tree rings lead the viewer's eye to the centre, where my
+                        logo is.<br><br>
+                        
+                        For the back of my design, I used the Source Code Variable font as it is a font often used in code
+                        editors, which is in turn associated with my job designation of choice, a Software Developer. I chose
+                        white on the green background because white was more readable as compared to the other triad
+                        colours. I used dark green outlines on the text in order to make the white less glaring for the viewer.
+                        For my contact details, I included my phone number and official email. A QR code that links to my
+                        contact details is included for the convenience of the viewer, as everything is becoming more
+                        digitalised.</p>
+                </div>
+
+                <div class="mySlides">
+                    <img src="images/covid19_poster.jpg">
+                    <h1>Covid-19 Infographic</h1>
+                    <p>This poster was created as a infographic for Covid-19. As this was one of my earlier works, it is not my best work, but I decided to put this up to show my improvement.</p>
+                </div>
+
+                <div class="mySlides">
+                    <img src="images/magazine.jpg" style="width:100%">
+                    <h1>Okinawa-feature magazine</h1>
+                    <p>This is a magazine page that was created to feature the special parts of Okinawa's attractions.
+                        One of the attractions of Okinawa is a shrine, so I decided to go with an ema, a wooden plaque theme to showcase the pictures.
+                        I also felt that it would give the magazine a traditional look, which would resemble the shrine.
+                    </p>
+                </div>
+
+                <div class="mySlides">
+                    <img src="images/green_tea_ad.jpg">
+                    <h1>Green Tea advertisement poster</h1>
+                    <p>This poster was created as an advertisement for Ayataka Green Tea. In order to make the green tea bottle stand out, I made the other elements of the advertisement grey-scale so that the viewer's eyes will be drawn to the green colour of the bottle.</p>
+                </div>
+
+                <div class="mySlides">
+                    <div class="ctr">
+                        <video src="images/C218 GA prototype demo.mp4" width="30%" controls></video>
+                    </div>
+                    <h1>Mobile Portfolio Prototype</h1>
+                    <p>This mobile portfolio was created for a Graded Assignment.<br><br>
+                        <b>Theme and ideation:</b><br>
+                        The theme of this design is Mirrors and Reflections, with a more abstract and elegant style.<br>
+                        Reflection is important when learning, and this design aims to represent this belief in both a literal and figurative sense, which is why this theme was chosen. At the same time, the mirror is meant to represent the human mind and body. By using this theme, the designer hopes to show that even the broken shards of a mirror is still part of the mirror and should not be thoughtlessly done away with just because it is broken, uneven or useless.
+                        It also aims to present the designer’s view of the world by telling a brief story through this portfolio application.<br><br>
+                        
+                        
+                        <b>Design principle:</b><br>
+                        In this design, the Design principles Rhythm, Contrast, and Emphasis were used.<br>
+                        Rhythm can be seen in the way the mirror shards are placed; The animations added to the buttons contribute to this as well.
+                        Contrast can be seen in the way colours are used. The main colours used are a darker shade of greenish blue () and greenish white (). A glowing effect is added to the hover state of the shards are created to help the shards stand out against the dark background. At the same time, it also contrasts with the sharp edges of the mirror shards as the blur applied to achieve the glow effect softens the overall look.
+                        Emphasis can be seen in the way the shards are of different sizes depending on which page they are in. In the Portfolio category page, the shards are bigger to represent the categories, while the shards that contain my past works are smaller in comparison
+                        </p>
+                </div>
+
+                <div class="mySlides">
+                    <div class="ctr">
+                        <video src="images/c346-L03-PS.mp4" width="30%" controls></video>
+                    </div>
+                    <h1>Bill Calculator</h1>
+                    <p>A calculator that calculates gst(7%) and service charge (10%), created in Android Studio<br>
+                        Link to see code for this calculator:<br>
+                        <a href="https://github.com/cyx-rp/Bill_Calculator"><u>Bill Calculator</u></a>
+                    </p>
+                </div>
+
+                <div class="mySlides">
+                    <div class="ctr">
+                        <video src="images/c346-L05-PS.mp4" width="30%" controls></video>
+                    </div>
+                    <h1>Module Viewer</h1>
+                    <p>
+                        An app that shows all the modules and schedules of a student. Created in Android Studio.<br>
+                        Link to see code for this app:<br>
+                        <a href="https://github.com/cyx-rp/My_Modules"><u>My Modules</u></a>
+                    </p>
+                </div>
+
+                <div class="mySlides">
+                    <div class="ctr">
+                        <video src="images/c346-L10-MyNDPSongs.mp4" width="30%" controls></video>
+                    </div>
+                    <h1>NDP custom songlist</h1>
+                    <p>                        
+                        An app that allows the user to add and save their favourite NDP songs. The songs are saved into their local phone storage. Created in Android Studio.<br>
+                        Link to see code for this app:<br>
+                        <a href="https://github.com/cyx-rp/MyNDPSongs"><u>My NDP Songs</u></a></p>
+                </div>
+
+                <div class="mySlides">
+                    <div class="ctr">
+                        <video src="images/c346_L12_PS.mp4" width="30%" controls></video>
+                    </div>
+                    <h1>My Movies</h1>
+                    <p>                        
+                        An app that allows the user to add and save their favourite movies. Created in Android Studio.<br>
+                        Link to see code for this app:<br>
+                        <a href="https://github.com/cyx-rp/MoreMoviesLesson12"><u>My Movies</u></a></p>
+                </div>
+
+                <div class="mySlides">
+                    <img src="images/c203-ga-home.png">
+                    <h1>Movie website</h1>
+                    <p>                        
+
+                        A movie website created for a Graded Assignment. Created using HTML, CSS and php.</p>
+                </div>
+
+                <div class="mySlides">
+                    <img src="images/c219-L05-home.png">
+                    <h1>Tourism website</h1>
+                    <p>A website created for a tourism company.</p>
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+
+                <!-- <div class="column">
+            <img class="demo cursor" src="images/poster.png" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/namecard_front.png" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+          </div> -->
+            </div>
+        </div>
+
+
+        <!-- **footer bg color to be changed ltr -->
+        <footer>
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="ftr-link"><a href="index.html" class="px-2">Home</a></li>
+                <li class="ftr-link"><a href="index.html#aboutMe" class="px-2">About Me</a></li>
+                <li class="ftr-link"><a href="portfolio.html" class="px-2">Portfolio</a></li>
+                <li class="ftr-link"><a href="index.html#contactMe" class="px-2">Contact Me</a></li>
+            </ul>
+            <p class="text-center">&copy; 2023 Chin Yu Xuan</p>
+        </footer>
 
 
 
 
+        <script>
 
-    <!-- <script src="" async defer>
-        // Open the Modal
-        function openModal() {
-            document.getElementById("myModal").style.display = "block";
-        }
-
-        // Close the Modal
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-        }
-
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            var captionText = document.getElementById("caption");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            captionText.innerHTML = dots[slideIndex - 1].alt;
-        }
-    </script> -->
+        </script>
+        <script src="script/script.js"></script>
 </body>
 
 </html>
